@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Modal</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/materialize.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="icons/material.css">
+	</head>
+	<body>
+
+		<a href="#teste" class="btn modal-trigger">Abrir modal</a>
+
+		<!-- Se colocar o button, precisa colocar o data-target que funciona como o href da tag <a> -->
+		<button data-target="teste" class="btn modal-trigger">Abrir modal com button</button>
+
+		<!-- Para colocar rodapé fixo, basta colocar modal-fixed-footer na frente da classe modal -->
+		<!-- Tem a opção bottom-sheet -->
+		<div class="modal" id="teste">
+			<div class="modal-content">
+				<h4 class="light">Teste</h4>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut commodo sapien, vel consequat lectus. Maecenas mauris arcu, consectetur eget quam vel, semper hendrerit velit. Nam lacinia ipsum turpis, vel rutrum mi facilisis tincidunt. Phasellus congue nibh velit, sed fermentum libero cursus eu. Fusce enim neque, vestibulum quis augue nec, consequat pretium nibh. Sed ut lectus dolor. Integer suscipit facilisis elementum. Nullam tincidunt ligula nulla, in tempus ipsum varius sed. Maecenas et ante faucibus neque condimentum dignissim at a justo. Nam cursus dignissim dignissim. Nulla odio urna, laoreet non dolor ut, volutpat ornare ligula. Vestibulum tempus, quam sed lacinia viverra, felis felis feugiat magna, quis sollicitudin urna risus non tellus. Ut dolor nisl, lobortis ut porta sit amet, ultricies sed nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+				</p>
+			</div>
+
+			<div class="modal-footer">
+				<a class="btn modal-close modal-action">Sair</a>
+				
+			</div>
+		</div>
+
+
+
+<!-- 		<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+		<!-- Modal Structure -->
+<!-- 		<div id="modal1" class="modal">
+			<div class="modal-content">
+				<h4>Modal Header</h4>
+				<p>A bunch of text</p>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+			</div>
+		</div> -->
+		
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+    		$('.modal').modal();
+		});
+
+	</script>
+
+	</body>
+</html>

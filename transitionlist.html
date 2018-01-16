@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transition List</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/materialize.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="icons/material.css">
+	</head>
+	<body>
+
+		<a href="#!" class="btn-floating btn-large red waves-effect waves-light" id="showlist"><i class="material-icons">menu</i></a>
+
+		<ul id="lista">
+			<li>Lista 1</li>
+			<li>Lista 2</li>
+			<li>Lista 3</li>
+			<li>Lista 4</li>
+		</ul>
+		
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.js"></script>
+
+	<script type="text/javascript">
+		$('#showlist').click(function(){
+			Materialize.showStaggeredList('#lista')
+		});
+		
+	</script>
+
+	</body>
+</html>

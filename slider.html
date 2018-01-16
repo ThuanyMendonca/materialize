@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Slider</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/materialize.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="icons/material.css">
+	</head>
+	<body>
+		<div class="slider">
+			<ul class="slides">
+				<li>
+					<img src="img/work.png"> <!-- random image -->
+					<div class="caption center-align">
+						<h3>This is our big Tagline!</h3>
+						<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					</div>
+				</li>
+				<li>
+					<img src="img/dehtml.png"> <!-- random image -->
+					<div class="caption left-align">
+						<h3>Left Aligned Caption</h3>
+						<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					</div>
+				</li>
+				<li>
+					<img src="img/desen.png"> <!-- random image -->
+					<div class="caption right-align">
+						<h3>Right Aligned Caption</h3>
+						<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					</div>
+				</li>
+				<li>
+					<img src="img/ferramenta.png"> <!-- random image -->
+					<div class="caption center-align">
+						<h3>This is our big Tagline!</h3>
+						<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					</div>
+				</li>
+			</ul>
+		</div>
+			
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.slider').slider({
+				transition: 380,
+				interval: 5000
+			});
+		});
+	</script>
+
+	</body>
+</html>

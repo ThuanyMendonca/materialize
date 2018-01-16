@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Carroussel</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/materialize.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="icons/material.css">
+	</head>
+	<body>
+		<div class="carousel">
+			<a class="carousel-item" href="#one!"><img src="img/work.png"></a>
+			<a class="carousel-item" href="#two!"><img src="img/ferramenta.png"></a>
+			<a class="carousel-item" href="#three!"><img src="img/desen.png"></a>
+			<a class="carousel-item" href="#four!"><img src="img/web.png"></a>
+			<a class="carousel-item" href="#five!"><img src="img/decolar.png"></a>
+		</div>
+      	<div class="row center">
+      		<button class="next btn-large waves-effect waves-light light-blue accent-2">Próximo</button>	
+      	</div>      		
+      	<!-- Slide tela cheia -->
+      	<div class="container">
+	      	<div class="carousel carousel-slider">
+				<a class="carousel-item" href="#one!"><img src="img/work.png"></a>
+				<a class="carousel-item" href="#two!"><img src="img/ferramenta.png"></a>
+				<a class="carousel-item" href="#three!"><img src="img/desen.png"></a>
+				<a class="carousel-item" href="#four!"><img src="img/web.png"></a>
+				<a class="carousel-item" href="#five!"><img src="img/decolar.png"></a>
+			</div>
+      	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// Slide menor
+			$('.carousel').carousel({
+				duration: 100,
+				shift: 100
+			});
+
+			$('.next').click(function(){
+				$('.carousel').carousel('next');
+			});
+
+			// Inicialização do slide tela cheia
+			$('.carousel.carousel-slider').carousel({fullWidth: true, duration: 100});
+
+		});		
+
+	</script>
+
+
+	</body>
+</html>

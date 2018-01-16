@@ -3,6 +3,16 @@ html {
 	font-size: 14px;
 }
 
+/*body {
+	background-color: grey;
+}*/
+
+/*.parallax-container {
+	height: 180px;
+	width: 750px;
+	margin-left: 329px;
+}*/
+
 p {
 	font-weight: 400;
 }

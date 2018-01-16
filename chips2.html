@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chips 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="icons/material.css">
+</head>
+<body>
+
+	<div class="chips"></div>
+
+	<!-- Botão -->
+	<button class="btn">Mostrar dados</button>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script type="text/javascript">
+	
+	$(document).ready(function(){
+
+		$('.chips').material_chip({
+			data: [
+				{tag: 'HTML', image: '', id: 1},
+				{tag: 'CSS'},
+				{tag: 'PHP'},
+			],
+			placeholder: 'Digite uma tag',
+			secondaryPlaceholder: '+ Tag',
+
+			autocompleteData: {
+				'Javascript': null,
+				'Jquery': null,
+				'Java': null,
+				'CSS': null
+			}
+		});
+
+	$('button').click(function(){
+		var dados = $('.chips').material_chip('data');
+		console.log(dados);
+	});
+
+
+	$('.chips-initial').material_chip('data');
+	});	
+	
+
+
+</script>
+</body>
+</html>

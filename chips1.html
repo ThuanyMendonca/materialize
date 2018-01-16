@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chips 1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="icons/material.css">
+</head>
+<body>
+
+	<div class="chips">
+
+	</div>
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script type="text/javascript">
+	// selecionando pela classe chips
+	$('.chips').material_chip();
+	$('.chips').on('chip.add', function(e, chip){
+    	alert("TAG adicionada");		
+	});
+
+	$('.chips').on('chip.delete', function(e, chip){
+    	alert("TAG deletada");
+	});
+
+	$('.chips').on('chip.select', function(e, chip){
+    // you have the selected chip here
+	});
+</script>
+</body>
+</html>

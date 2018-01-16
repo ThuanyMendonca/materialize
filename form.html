@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/materialize.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="icons/material.css">
+	</head>
+	<body>
+
+		<div class="row">
+			<form class="col s12">
+				<div class="input-field col s6">
+					<i class="material-icons prefix">face</i>
+					<!-- Limitar tamanho do texto -> data-length -->
+					<input type="text" name="nome" id="nome" data-length="30" placeholder="seu nome">
+					<label for="nome">Nome completo</label>
+				</div>
+
+				<div class="input-field col s6">
+					<i class="material-icons prefix">email</i>
+					<input type="email" class="validate" name="email" id="email">
+					<label for="email" data-error="Email inválido" data-success="Email válido">Seu e-mail</label>
+				</div>	
+
+				<div class="input-field col s12">
+					<i class="material-icons prefix">edit_mode</i>
+					<textarea id="text" class="materialize-textarea"></textarea>
+					<label for="text">Mensagem</label>
+					
+				</div>
+			</form>
+			
+		</div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.js"></script>
+	</body>
+</html>

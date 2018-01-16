@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form 3</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/materialize.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="icons/material.css">
+	</head>
+	<body>
+
+		<div class="row">
+			<form class="col s12">
+				<!-- Colocando icones -->
+				<select class="icons">
+					<optgroup label="Opções 1">
+						<option value="1" data-icon="img/img1.png" class="circle">Opção 1</option>
+						<option value="2" data-icon="img/img1.png" class="circle">Opção 2</option>
+						<option value="3" data-icon="img/img1.png" class="circle">Opção 3</option>
+						<option value="4" data-icon="img/img1.png" class="circle">Opção 4</option>	
+					</optgroup>
+
+					<optgroup label="Opções 2">
+						<option value="1">Opção 1</option>
+						<option value="2">Opção 2</option>
+						<option value="3">Opção 3</option>
+						<option value="4">Opção 4</option>	
+					</optgroup>
+					
+				</select>
+
+				<!-- DatePicker -->
+				<div class="input-field col s12">
+					<input type="date" class="datepicker">
+				</div>
+				<!-- TimePicker -->
+				<div class="input-field col s12">
+					<input type="time" class="timepicker">
+				</div>
+			</form>
+			
+		</div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('select').material_select();
+		});
+
+
+		// DatePicker em inglês
+		// $('.datepicker').pickadate({
+		//     selectMonths: true, // Creates a dropdown to control month
+		//     selectYears: 15, // Creates a dropdown of 15 years to control year,
+		//     today: 'Today',
+		//     clear: 'Clear',
+		//     close: 'Ok',
+		//     closeOnSelect: false // Close upon selecting a date,
+		// });
+
+
+		// DatePicker com tradução
+		$('.datepicker').pickadate({
+		  labelMonthNext: 'Próximo mês',
+		  labelMonthPrev: 'Mês anterior',
+		  labelMonthSelect: 'Selecione um mês',
+		  labelYearSelect: 'Selecione um ano',
+		  monthsFull: [ 'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro' ],
+		  monthsShort: [ 'Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez' ],
+		  weekdaysFull: [ 'Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado' ],
+		  weekdaysShort: [ 'Dom', 'Seg', 'Ter', 'Qua', 'Qui','Sex', 'Sab' ],
+		  weekdaysLetter: [ 'D', 'S', 'T', 'Q', 'Q', 'S', 'S' ],
+		  today: 'Hoje',
+		  clear: 'Limpar',
+		  close: 'Fechar'
+		});
+
+		// TimePicker
+		$('.timepicker').pickatime({
+		    default: 'now', // Set default time: 'now', '1:30AM', '16:30'
+		    fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
+		    twelvehour: false, // Use AM/PM or 24-hour format
+		    donetext: 'OK', // text for done-button
+		    cleartext: 'Clear', // text for clear-button
+		    canceltext: 'Cancel', // Text for cancel-button
+		    autoclose: false, // automatic close timepicker
+		    ampmclickable: true, // make AM PM clickable
+		    aftershow: function(){} //Function for after opening timepicker
+		});
+	</script>
+	</body>
+</html>

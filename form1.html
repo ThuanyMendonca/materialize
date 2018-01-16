@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form 1</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/materialize.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="icons/material.css">
+	</head>
+	<body>
+
+		<div class="row">
+			<form class="col s12">
+				<!-- Digite seu email: -->
+
+				<div class="row">
+					<div class="col s12">
+						<div class="row">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">email</i>
+								<input type="text" id="autocomplete-input" class="autocomplete">
+								<label for="autocomplete-input">Autocomplete</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			
+		</div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('input.autocomplete').autocomplete({
+				data: {
+					"thuany1997@hotmail.com": null,
+					"google@hotmail.com": null,
+					"teste@gmail.com": 'https://marriedwiki.com/uploads/bio/evelyne-brochu.jpg'
+				},
+    limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
+    onAutocomplete: function(val) {
+      alert("Email selecionado");
+  },
+    minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
+  });
+		})
+	</script>
+	</body>
+</html>

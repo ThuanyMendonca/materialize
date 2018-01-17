@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Side nav</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/materialize.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="icons/material.css">
+		<style type="text/css">
+
+			
+		</style>
+
+	</head>
+	<body>
+		<ul id="slide-out" class="side-nav">
+			
+			<li>
+				<div class="user-view">
+					<div class="backgroud">
+						<img src="img/web.png">
+					</div>	
+					<a href=""><img src="img/work.png" class="circle"></a>
+					<a href=""><span class=" name">Thuany</span></a>
+					<a href=""><span class=" email">thuany@teste.com.br</span></a>
+				</div>	
+			</li>
+
+			<li><a href="#" class="waves-effect">Home</a></li>
+			<!-- Divisor na side nav -->
+			<li><div class="divider"></div></li>
+			<li><a href="#" class="subheader">Titulo</a></li>
+			<li><a href="#"><i class="material-icons">cloud</i>Produtos</a></li>
+			<li><a href="#">Contatos</a></li>
+
+			<li class="no-padding"> 
+				<ul class="collapsible collapsible-accordion">
+					<li>
+						<a href="#" class="collapsible-header">Dropdown</a>
+						<div class="collapsible-body">
+							<ul>
+								<li><a href="#">Link 1</a></li>
+								<li><a href="#">Link 2</a></li>
+								<li><a href="#">Link 3</a></li>
+								<li><a href="#">Link 4</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+		<a class="btn btn-large btn-floating" data-activates="slide-out"><i class="material-icons">menu</i></a>
+		
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.btn').sideNav();
+		})
+	</script>
+
+	</body>
+</html>

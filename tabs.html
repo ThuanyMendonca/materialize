@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tabs</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/materialize.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="icons/material.css">
+
+	</head>
+	<body>
+		<div class="row">
+			<div class="col s12">
+				<ul class="tabs blue">
+					<li class="tab col s3">
+						<a href="#teste1">Teste 01</a>
+					</li>
+
+					<li class="tab col s3">
+						<a href="#teste2">Teste 02</a>
+					</li>
+
+					<li class="tab col s3">
+						<a href="#teste3">Teste 03</a>
+					</li>
+
+					<li class="tab col s3">
+						<a href="#teste4">Teste 04</a>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<div id="teste1" class="col s12">
+			<p>
+				Aliquam erat volutpat. Praesent rutrum lorem sit amet turpis condimentum, ac lacinia sapien vulputate. Etiam vestibulum, felis id tristique ornare, velit nibh blandit odio, ac tristique leo massa auctor lacus. Vestibulum pulvinar nisi vitae condimentum fringilla. Sed euismod aliquam ullamcorper. Nulla mollis nisl at tellus eleifend feugiat. Donec hendrerit, leo quis ornare mattis, diam odio luctus nunc, nec maximus lorem arcu eu ligula. Donec bibendum magna vel erat luctus, et pellentesque lorem luctus. Nunc eu eros rutrum, fermentum diam commodo, rutrum nunc. Aliquam ipsum urna, luctus quis consectetur ac, accumsan in nunc. Aliquam consequat lacus sed eros elementum auctor. Duis risus odio, finibus vel tempor ac, sodales sed metus. Pellentesque bibendum neque ultricies, facilisis nisi a, scelerisque nibh. Proin placerat viverra justo, vel commodo turpis vestibulum sed.
+			</p>
+		</div>
+
+		<div id="teste2" class="col s12">
+			<p>
+				Proin et quam sit amet dolor rhoncus molestie. Integer sapien ante, fermentum vel est eu, mattis iaculis ligula. Duis in magna auctor, faucibus libero eu, aliquet elit. In hac habitasse platea dictumst. Maecenas sodales vulputate urna a consectetur. Vestibulum dictum pharetra nisi, eu efficitur justo porttitor ut. Nullam at pulvinar ligula. Suspendisse potenti. In vehicula dolor sit amet turpis tempus, finibus aliquet leo ultrices. Vivamus bibendum, massa at malesuada molestie, sapien nibh hendrerit dolor, sed vehicula nunc mauris vel elit. Nunc elit quam, sodales placerat massa et, dictum mattis velit. Nam facilisis, augue et posuere congue, est sapien pellentesque lectus, eu congue urna nulla et ligula. Donec at neque vulputate neque ultricies porta.
+			</p>
+		</div>
+
+		<div id="teste3" class="col s12">
+			<p>
+				Nunc egestas felis magna. Nunc in auctor nibh. Maecenas ac egestas nibh, in hendrerit felis. In vitae elementum sem. Mauris sed neque nec leo accumsan sodales at nec felis. Mauris dictum vel dolor et consequat. Morbi mauris sem, efficitur sit amet imperdiet vel, viverra eget eros. Etiam dolor erat, malesuada a mi eget, accumsan aliquet orci
+			</p>
+		</div>
+
+		<div id="teste4" class="col s12">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida metus eu ornare rhoncus. Nunc ornare leo vitae consectetur facilisis. Sed vel nisl consectetur, ullamcorper nisi porttitor, sollicitudin neque. Ut felis erat, porttitor et semper sed, vestibulum et odio. Nulla vitae faucibus eros. Phasellus efficitur suscipit tellus quis laoreet. Aenean iaculis tellus ac orci ullamcorper posuere.
+			</p>
+		</div>
+
+
+		<a class="btn" id="alterar-aba">Alterar aba</a>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('ul.tabs').tabs(
+				swipeable: true
+			
+			});
+
+			//Alterar aba (botão)
+			$('.alterar-aba').click(function(){
+				$('ul.tabs').tabs('select_tab', 'teste4');
+			});
+		});
+	</script>
+
+	</body>
+</html>

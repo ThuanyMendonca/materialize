@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Toasts</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/materialize.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="icons/material.css">
+	</head>
+	<body>
+
+		<a href="" class="btn" id="toast">Toast</a>
+		
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.js"></script>
+
+	<script type="text/javascript">
+		$('#toast').click(function(){
+			var $conteudo = $('<span>Excluido com sucesso</span>').add($('<button class="btn-flat red-text toast-action">Cancelar</button>'));
+  			// Materialize.toast($toastContent, 10000);
+
+			Materialize.toast('Olá mundo', 4000, 'rounded', function(){
+				alert("Funcionou");
+			});
+		});
+	</script>
+
+	</body>
+</html>
